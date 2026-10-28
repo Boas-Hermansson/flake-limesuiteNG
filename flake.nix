@@ -21,8 +21,8 @@
       src = pkgs.fetchFromGitHub {
         owner = "myriadrf";
         repo = "LimeSuiteNG";
-        rev = "133c4d9";
-        hash = "sha256-1YimUZ4k+PQTC4jJ829NNVR1eZRbb5hWldGWmXQfyTs=";
+        rev = "5bc2d18";
+        hash = "sha256-1620FY1uYWnix4IxEqwrBGfAhcjedu+HS1pYtt8Bpqk=";
       };
 
       preConfigure = ''
