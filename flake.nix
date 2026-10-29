@@ -83,13 +83,13 @@
         done 
 
         mkdir -p "$out/lib/modules/${modDirVersion}/extra"
-        cp drivers/linux/limepcie/limepcie-0.1.10/limepcie.ko "$out/lib/modules/${modDirVersion}/extra/" 
+        cp drivers/linux/limepcie/limepcie-*/limepcie.ko "$out/lib/modules/${modDirVersion}/extra/" 
 
         mkdir -p $out/lib/udev/rules.d
 
         make -C udev-rules install
 
-        cp src/liblimesuiteng.so.0.3-1 $out/lib/liblimesuiteng.so.0.3-1
+        cp src/liblimesuiteng.so.* $out/lib/
         runHook postInstall
       '';
 
